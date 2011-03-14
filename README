@@ -1,9 +1,4 @@
 tcjs core base
 
 Simple base objects for automated testing in TestComplete.
-Extends functionality of the standard helper-objects.
-
-fs -	Object for intercation with file system i.e. file copying files, creating folders and so on.
-		At this moment most methods are wrappers for Scripting.FileSystemObject methods.
-string -	Extends the prototype of the standard JScript string object with usefull methods i.e.
-			getListItem, trim and others.
+Extends functionality of the standard global objects and implements ease-to-use wrappers.
