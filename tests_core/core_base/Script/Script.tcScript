@@ -58,28 +58,28 @@
 			</Node>
 			<Node name="item0000000004">
 				<Node name="item data">
-					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base_string.js"/>
+					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base_objects.js"/>
 				</Node>
 				<Prp name="index" type="I" value="4"/>
-				<Prp name="key" type="S" value="{5D72371E-416C-4324-961F-9CEB8A9E27D9}"/>
+				<Prp name="key" type="S" value="{500AE16F-262C-4DA6-A7B2-B973BD6E403A}"/>
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
 			<Node name="item0000000005">
 				<Node name="item data">
-					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base_array.js"/>
+					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base_log.js"/>
 				</Node>
 				<Prp name="index" type="I" value="5"/>
-				<Prp name="key" type="S" value="{EF28E5C0-D03B-45E1-A022-4F343F9A92C5}"/>
+				<Prp name="key" type="S" value="{E5426493-CDEE-4194-A51B-E9758E8B6358}"/>
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
 			<Node name="item0000000006">
 				<Node name="item data">
-					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base_objects.js"/>
+					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base_version.js"/>
 				</Node>
 				<Prp name="index" type="I" value="6"/>
-				<Prp name="key" type="S" value="{500AE16F-262C-4DA6-A7B2-B973BD6E403A}"/>
+				<Prp name="key" type="S" value="{5A74D5A8-2FED-4E76-8147-EC7EBB58DE05}"/>
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
@@ -105,15 +105,15 @@
 								</Node>
 								<Node name="ref0000000003">
 									<Prp name="index" type="I" value="3"/>
-									<Prp name="key" type="S" value="{5D72371E-416C-4324-961F-9CEB8A9E27D9}"/>
+									<Prp name="key" type="S" value="{500AE16F-262C-4DA6-A7B2-B973BD6E403A}"/>
 								</Node>
 								<Node name="ref0000000004">
 									<Prp name="index" type="I" value="4"/>
-									<Prp name="key" type="S" value="{EF28E5C0-D03B-45E1-A022-4F343F9A92C5}"/>
+									<Prp name="key" type="S" value="{E5426493-CDEE-4194-A51B-E9758E8B6358}"/>
 								</Node>
 								<Node name="ref0000000005">
 									<Prp name="index" type="I" value="5"/>
-									<Prp name="key" type="S" value="{500AE16F-262C-4DA6-A7B2-B973BD6E403A}"/>
+									<Prp name="key" type="S" value="{5A74D5A8-2FED-4E76-8147-EC7EBB58DE05}"/>
 								</Node>
 							</Node>
 							<Prp name="caption" type="S" value="base"/>

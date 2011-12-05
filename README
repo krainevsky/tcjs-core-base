@@ -2,3 +2,8 @@ tcjs core base
 
 Simple base objects for automated testing in TestComplete.
 Extends functionality of the standard global objects and implements ease-to-use wrappers.
+
+Also creates some useful objects such as 
+    fs as a wrapper for FileSystemObject and aqFile, aqFileSystem
+    _version to perform comparsion of strings that looks like version numbers
+    logger to extend a Log functionality
