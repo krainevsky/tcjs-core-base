@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<applications>
+  <app id="client" desc="Client">
+    <objects>
+      <object id="wndMain" desc="Главное окно"/>
+    </objects>
+  </app>
+</applications>

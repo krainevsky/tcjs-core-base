@@ -83,6 +83,42 @@
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
+			<Node name="item0000000007">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\player\core_player.js"/>
+				</Node>
+				<Prp name="index" type="I" value="7"/>
+				<Prp name="key" type="S" value="{F2CD29EB-C9ED-4E53-A8C7-2D61CBF3513D}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000008">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\player\core_player_reader.js"/>
+				</Node>
+				<Prp name="index" type="I" value="8"/>
+				<Prp name="key" type="S" value="{FFF2AE71-61C4-4BB8-815F-D362B20F08DF}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000009">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base.js"/>
+				</Node>
+				<Prp name="index" type="I" value="9"/>
+				<Prp name="key" type="S" value="{B75CE27A-177A-46BB-8120-F3B59D6AF8EA}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000010">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base_xml.js"/>
+				</Node>
+				<Prp name="index" type="I" value="10"/>
+				<Prp name="key" type="S" value="{F5834689-4FB0-4C4D-924B-773947A5288D}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
 		</Node>
 		<Node name="folders">
 			<Node name="folders">
@@ -115,10 +151,35 @@
 									<Prp name="index" type="I" value="5"/>
 									<Prp name="key" type="S" value="{5A74D5A8-2FED-4E76-8147-EC7EBB58DE05}"/>
 								</Node>
+								<Node name="ref0000000006">
+									<Prp name="index" type="I" value="6"/>
+									<Prp name="key" type="S" value="{B75CE27A-177A-46BB-8120-F3B59D6AF8EA}"/>
+								</Node>
+								<Node name="ref0000000007">
+									<Prp name="index" type="I" value="7"/>
+									<Prp name="key" type="S" value="{F5834689-4FB0-4C4D-924B-773947A5288D}"/>
+								</Node>
 							</Node>
 							<Prp name="caption" type="S" value="base"/>
 							<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
 							<Prp name="index" type="I" value="0"/>
+							<Prp name="moniker" type="S" value=""/>
+						</Node>
+						<Node name="folder0000000001">
+							<Node name="folders"/>
+							<Node name="references">
+								<Node name="ref0000000000">
+									<Prp name="index" type="I" value="0"/>
+									<Prp name="key" type="S" value="{F2CD29EB-C9ED-4E53-A8C7-2D61CBF3513D}"/>
+								</Node>
+								<Node name="ref0000000001">
+									<Prp name="index" type="I" value="1"/>
+									<Prp name="key" type="S" value="{FFF2AE71-61C4-4BB8-815F-D362B20F08DF}"/>
+								</Node>
+							</Node>
+							<Prp name="caption" type="S" value="player"/>
+							<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+							<Prp name="index" type="I" value="1"/>
 							<Prp name="moniker" type="S" value=""/>
 						</Node>
 					</Node>

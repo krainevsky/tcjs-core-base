@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<controls>
+  <control id="mainMenu" type="menu" desc="Main menu">
+    <path>
+      <delphi><![CDATA[VCLObject("MainForm")]]></delphi>
+      <swing><![CDATA[SwingObject("JfrmMain", "Orders - Untitled", 0, 1).SwingObject("JRootPane", "", 0).SwingObject("null.layeredPane").SwingObject("JMenuBar", "", 0).SwingMenu]]></swing>
+    </path>
+  </control>
+</controls>

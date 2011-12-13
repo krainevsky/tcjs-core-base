@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controltypes>
+  <!-- This is an example of simple type of control with two methods 'setProperty' and 'checkProperty' -->
+  <controltype id="object" desc="Some object containing low-level actions">
+    <actions>
+      <action id="setProperty" desc="Set property">
+        <params>
+          <param id="0" desc="Name of the property"/>
+          <param id="1" desc="Value"/>
+        </params>
+      </action>
+      <action id="checkProperty" desc="Check property">
+        <params>
+          <param id="0" desc="Name of the property"/>
+          <param id="1" desc="Expected value"/>
+        </params>
+      </action>
+    </actions>
+  </controltype>
+  <!-- This control type inherits actions of 'object' control type so every control with type 'visibleObject'
+       should be able to perform 'setProperty' and 'checkProperty' actions -->
+  <controltype id="visibleObject">
+    <actions>
+      <action id="keys" desc="Send key pressings">
+        <params>
+          <param id="0" desc="Keys to be sent"/>
+        </params>
+      </action>
+      <action id="click" desc="Click">
+        <params>
+          <param id="0" desc="(Optional) Use LMB/RMB/MMB to perform click with desired button (Default=LMB)"/>
+        </params>
+      </action>
+    </actions>
+    <extends>
+      <extend id="object"/>
+    </extends>
+  </controltype>
+  <!-- So this is more complex example. This control inherits 'keys' action from 'visibleObject'
+       but it contains a 'keys' action by it self. In this case the textField's handler should
+       be responsible for performing 'keys' action -->
+  <controltype id="textField" desc="A containing text control">
+    <actions>
+      <action id="keys" desc="Sends a text to a control">
+        <params>
+          <param id="0" desc="Desired text"/>
+        </params>
+      </action>
+      <action id="checkText" desc="Check text">
+        <params>
+          <param id="0" desc="Expected text"/>
+        </params>
+      </action>
+    </actions>
+    <extends>
+      <extend id="visibleObject"/>
+    </extends>
+  </controltype>
+  <controltype id="menu" desc="Menu">
+    <actions>
+      <action id="click" desc="Click item">
+        <params>
+          <param id="0" desc="Menu item's path"/>
+        </params>
+      </action>
+    </actions>
+    <extends>
+      <extend id="visibleObject"/>
+    </extends>
+  </controltype>
+  <controltype id="empty"/>
+</controltypes>
