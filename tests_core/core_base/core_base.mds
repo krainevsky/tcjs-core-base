@@ -41,25 +41,40 @@
 				<Prp name="type" type="S" value="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}"/>
 				<Prp name="typename" type="S" value="Events"/>
 			</Node>
+			<Node name="item0000000002">
+				<Node name="item data">
+					<Prp name="storage" type="S" value="TestedApps\TestedApps.tcTAs"/>
+				</Node>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="key" type="S" value="{A6CB598D-EDA1-4AC1-BDED-DA1BC8FCF423}"/>
+				<Prp name="type" type="S" value="{90D101C8-80C7-48D4-9055-2E451B9BCD75}"/>
+				<Prp name="typename" type="S" value="Tested Applications"/>
+			</Node>
 		</Node>
 		<Node name="config">
 			<Prp name="language" type="S" value="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}"/>
 		</Node>
 		<Node name="files">
+			<Node name="..\..\core\apps\core_apps_app.js"/>
+			<Node name="..\..\core\apps\core_apps_cmd.js"/>
+			<Node name="..\..\core\apps\core_apps_complex_app.js"/>
 			<Node name="..\..\core\base\core_base.js"/>
 			<Node name="..\..\core\base\core_base_debug.js"/>
 			<Node name="..\..\core\base\core_base_fs.js"/>
 			<Node name="..\..\core\base\core_base_log.js"/>
 			<Node name="..\..\core\base\core_base_messages.js"/>
 			<Node name="..\..\core\base\core_base_objects.js"/>
+			<Node name="..\..\core\base\core_base_variables.js"/>
 			<Node name="..\..\core\base\core_base_version.js"/>
 			<Node name="..\..\core\base\core_base_xml.js"/>
 			<Node name="..\..\core\player\core_player.js"/>
+			<Node name="..\..\core\player\core_player_finder.js"/>
 			<Node name="..\..\core\player\core_player_reader.js"/>
 			<Node name="core_base.mds"/>
 			<Node name="events\events.tcax"/>
 			<Node name="script\script.tcscript"/>
 			<Node name="script\tests_core_base.sj"/>
+			<Node name="testedapps\testedapps.tctas"/>
 		</Node>
 		<Node name="folders">
 			<Node name="folders"/>
@@ -350,84 +365,162 @@
 				<Prp name="col4type" type="I" value="5"/>
 				<Prp name="colcount" type="I" value="5"/>
 				<Prp name="colindex" type="I" value="4"/>
-				<Prp name="rowcount" type="I" value="25"/>
+				<Prp name="rowcount" type="I" value="51"/>
 				<Prp name="rowindex" type="I" value="-1"/>
 				<Prp name="type" type="I" value="6"/>
 				<Prp name="val2x0" type="S" value="Win32 Controls and Windows"/>
-				<Prp name="val2x1" type="S" value="Month calendar"/>
-				<Prp name="val2x10" type="S" value="Tab control"/>
-				<Prp name="val2x11" type="S" value="Toolbar"/>
-				<Prp name="val2x12" type="S" value="Track bar (slider)"/>
-				<Prp name="val2x13" type="S" value="Scroll bar"/>
-				<Prp name="val2x14" type="S" value="Spin box"/>
-				<Prp name="val2x15" type="S" value="Status bar"/>
-				<Prp name="val2x16" type="S" value="Hot key"/>
-				<Prp name="val2x17" type="S" value="IP address"/>
-				<Prp name="val2x18" type="S" value="Pager"/>
-				<Prp name="val2x19" type="S" value="Combo box"/>
-				<Prp name="val2x2" type="S" value="Tree view"/>
-				<Prp name="val2x20" type="S" value="MDI child window"/>
-				<Prp name="val2x21" type="S" value="Edit box"/>
-				<Prp name="val2x22" type="S" value="Check box"/>
-				<Prp name="val2x23" type="S" value="List box"/>
-				<Prp name="val2x24" type="S" value="Child window"/>
-				<Prp name="val2x3" type="S" value="Button"/>
-				<Prp name="val2x4" type="S" value="List view"/>
-				<Prp name="val2x5" type="S" value="Date-time picker"/>
-				<Prp name="val2x6" type="S" value="Radio button (option button)"/>
-				<Prp name="val2x7" type="S" value="SysLink"/>
-				<Prp name="val2x8" type="S" value="Top-level window"/>
-				<Prp name="val2x9" type="S" value="Header"/>
+				<Prp name="val2x1" type="S" value="Top-level window"/>
+				<Prp name="val2x10" type="S" value="Text area"/>
+				<Prp name="val2x11" type="S" value="Text field"/>
+				<Prp name="val2x12" type="S" value="Month calendar"/>
+				<Prp name="val2x13" type="S" value="Button"/>
+				<Prp name="val2x14" type="S" value="Edit box"/>
+				<Prp name="val2x15" type="S" value="Slider"/>
+				<Prp name="val2x16" type="S" value="Status bar"/>
+				<Prp name="val2x17" type="S" value="Scroll bar"/>
+				<Prp name="val2x18" type="S" value="Radio menu item"/>
+				<Prp name="val2x19" type="S" value="List"/>
+				<Prp name="val2x2" type="S" value="Swing Controls"/>
+				<Prp name="val2x20" type="S" value="Track bar (slider)"/>
+				<Prp name="val2x21" type="S" value="Combo box"/>
+				<Prp name="val2x22" type="S" value="Date-time picker"/>
+				<Prp name="val2x23" type="S" value="Check box"/>
+				<Prp name="val2x24" type="S" value="Scroll pane"/>
+				<Prp name="val2x25" type="S" value="SysLink"/>
+				<Prp name="val2x26" type="S" value="List view"/>
+				<Prp name="val2x27" type="S" value="Pager"/>
+				<Prp name="val2x28" type="S" value="Header"/>
+				<Prp name="val2x29" type="S" value="Menu bar"/>
+				<Prp name="val2x3" type="S" value="Tree"/>
+				<Prp name="val2x30" type="S" value="Tabbed pane"/>
+				<Prp name="val2x31" type="S" value="Password field"/>
+				<Prp name="val2x32" type="S" value="MDI child window"/>
+				<Prp name="val2x33" type="S" value="Check box"/>
+				<Prp name="val2x34" type="S" value="Child window"/>
+				<Prp name="val2x35" type="S" value="List box"/>
+				<Prp name="val2x36" type="S" value="Scroll bar"/>
+				<Prp name="val2x37" type="S" value="Spinner"/>
+				<Prp name="val2x38" type="S" value="Tree view"/>
+				<Prp name="val2x39" type="S" value="StringGrid"/>
+				<Prp name="val2x4" type="S" value="Combo-box"/>
+				<Prp name="val2x40" type="S" value="Spin box"/>
+				<Prp name="val2x41" type="S" value="Button"/>
+				<Prp name="val2x42" type="S" value="Tool bar"/>
+				<Prp name="val2x43" type="S" value="Hot key"/>
+				<Prp name="val2x44" type="S" value="Toggle button"/>
+				<Prp name="val2x45" type="S" value="Tab control"/>
+				<Prp name="val2x46" type="S" value="IP address"/>
+				<Prp name="val2x47" type="S" value="Radio button (option button)"/>
+				<Prp name="val2x48" type="S" value="Table header"/>
+				<Prp name="val2x49" type="S" value="Toolbar"/>
+				<Prp name="val2x5" type="S" value="Borland Controls"/>
+				<Prp name="val2x50" type="S" value="Check menu item"/>
+				<Prp name="val2x6" type="S" value="DBGrid"/>
+				<Prp name="val2x7" type="S" value="Menu"/>
+				<Prp name="val2x8" type="S" value="Table"/>
+				<Prp name="val2x9" type="S" value="Radio button"/>
 				<Prp name="val3x0" type="S" value=""/>
-				<Prp name="val3x1" type="S" value="-1,0,&quot;*MonthCalendar*&quot;,-1,0,&quot;*SysMonthCal*&quot;,-1,0,&quot;*MonthView*&quot;"/>
-				<Prp name="val3x10" type="S" value="-1,0,&quot;*TabControl*&quot;,-1,0,&quot;TPageControl&quot;,-1,0,&quot;TTabbedNotebook&quot;,-1,0,&quot;TPropertySheetControl&quot;,-1,0,&quot;TabStrip20WndClass&quot;,-1,0,&quot;_wx_SysTabCtl32&quot;"/>
-				<Prp name="val3x11" type="S" value="-1,0,&quot;*ToolBar*&quot;"/>
-				<Prp name="val3x12" type="S" value="-1,0,&quot;*TrackBar*&quot;"/>
-				<Prp name="val3x13" type="S" value="-1,0,&quot;*ScrollBar*&quot;"/>
-				<Prp name="val3x14" type="S" value="-1,0,&quot;*UpDown*&quot;"/>
-				<Prp name="val3x15" type="S" value="-1,0,&quot;*StatusBar*&quot;"/>
-				<Prp name="val3x16" type="S" value="-1,0,&quot;*HotKey*&quot;"/>
-				<Prp name="val3x17" type="S" value="-1,0,&quot;SysIPAddress32&quot;"/>
-				<Prp name="val3x18" type="S" value="-1,0,&quot;*SysPager*&quot;,-1,0,&quot;*PageScroller*&quot;"/>
-				<Prp name="val3x19" type="S" value="-1,0,&quot;*COMBOBOX*&quot;,-1,0,&quot;Thunder*DriveListBox&quot;,-1,0,&quot;TColorBox*&quot;"/>
-				<Prp name="val3x2" type="S" value="-1,0,&quot;*TreeView*&quot;"/>
-				<Prp name="val3x20" type="S" value=""/>
-				<Prp name="val3x21" type="S" value="-1,0,&quot;EDIT&quot;,-1,0,&quot;TEdit&quot;,-1,0,&quot;TMemo&quot;,-1,0,&quot;TLabeledEdit&quot;,-1,0,&quot;*RichEdit*&quot;,-1,0,&quot;TseDBEdit&quot;,-1,0,&quot;WindowsForms*.EDIT*&quot;,-1,0,&quot;Thunder*TextBox&quot;,-1,0,&quot;WFC.EDIT&quot;"/>
-				<Prp name="val3x22" type="S" value="-1,0,&quot;*CHECKBOX*&quot;"/>
-				<Prp name="val3x23" type="S" value="-1,0,&quot;ListBox&quot;,-1,0,&quot;TListBox*&quot;,-1,0,&quot;TCheckListBox*&quot;,-1,0,&quot;TColorListBox*&quot;,-1,0,&quot;ThunderRT6ListBox&quot;,-1,0,&quot;WFC.LISTBOX&quot;,-1,0,&quot;WindowsForms*.LISTBOX.*&quot;,-1,0,&quot;ComboLBox&quot;,-1,0,&quot;REListBox20W&quot;"/>
-				<Prp name="val3x24" type="S" value=""/>
-				<Prp name="val3x3" type="S" value="-1,0,&quot;TBitBtn*&quot;,-1,0,&quot;TButton*&quot;,-1,0,&quot;Thunder*CommandButton&quot;,-1,0,&quot;WindowsForms*BUTTON*&quot;"/>
-				<Prp name="val3x4" type="S" value="-1,0,&quot;*ListView*&quot;"/>
-				<Prp name="val3x5" type="S" value="-1,0,&quot;*DateTimePick*&quot;,-1,0,&quot;DTPicker*&quot;"/>
-				<Prp name="val3x6" type="S" value="-1,0,&quot;*RadioButton*&quot;,-1,0,&quot;TGroupButton*&quot;,-1,0,&quot;Thunder*OptionButton&quot;"/>
-				<Prp name="val3x7" type="S" value="-1,0,&quot;SysLink&quot;,-1,0,&quot;Link?Window&quot;"/>
-				<Prp name="val3x8" type="S" value=""/>
-				<Prp name="val3x9" type="S" value="-1,0,&quot;*SysHeader*&quot;,-1,0,&quot;THeaderControl*&quot;"/>
+				<Prp name="val3x1" type="S" value=""/>
+				<Prp name="val3x10" type="S" value="-1,0,&quot;javax.swing.JTextArea&quot;,-1,0,&quot;javax.swing.JTextPane&quot;,-1,0,&quot;javax.swing.JEditorPane&quot;"/>
+				<Prp name="val3x11" type="S" value="-1,0,&quot;javax.swing.JTextField&quot;,-1,0,&quot;javax.swing.JFormattedTextField&quot;"/>
+				<Prp name="val3x12" type="S" value="-1,0,&quot;*MonthCalendar*&quot;,-1,0,&quot;*SysMonthCal*&quot;,-1,0,&quot;*MonthView*&quot;"/>
+				<Prp name="val3x13" type="S" value="-1,0,&quot;TBitBtn*&quot;,-1,0,&quot;TButton*&quot;,-1,0,&quot;Thunder*CommandButton&quot;,-1,0,&quot;WindowsForms*BUTTON*&quot;"/>
+				<Prp name="val3x14" type="S" value="-1,0,&quot;EDIT&quot;,-1,0,&quot;TEdit&quot;,-1,0,&quot;TMemo&quot;,-1,0,&quot;TLabeledEdit&quot;,-1,0,&quot;*RichEdit*&quot;,-1,0,&quot;TseDBEdit&quot;,-1,0,&quot;WindowsForms*.EDIT*&quot;,-1,0,&quot;Thunder*TextBox&quot;,-1,0,&quot;WFC.EDIT&quot;"/>
+				<Prp name="val3x15" type="S" value="-1,0,&quot;javax.swing.JSlider&quot;"/>
+				<Prp name="val3x16" type="S" value="-1,0,&quot;*StatusBar*&quot;"/>
+				<Prp name="val3x17" type="S" value="-1,0,&quot;javax.swing.JScrollBar&quot;,-1,0,&quot;javax.swing.JScrollPane$ScrollBar&quot;"/>
+				<Prp name="val3x18" type="S" value="-1,0,&quot;javax.swing.JRadioButtonMenuItem&quot;"/>
+				<Prp name="val3x19" type="S" value="-1,-1,&quot;javax.swing.JList&quot;"/>
+				<Prp name="val3x2" type="S" value=""/>
+				<Prp name="val3x20" type="S" value="-1,0,&quot;*TrackBar*&quot;"/>
+				<Prp name="val3x21" type="S" value="-1,0,&quot;*COMBOBOX*&quot;,-1,0,&quot;Thunder*DriveListBox&quot;,-1,0,&quot;TColorBox*&quot;"/>
+				<Prp name="val3x22" type="S" value="-1,0,&quot;*DateTimePick*&quot;,-1,0,&quot;DTPicker*&quot;"/>
+				<Prp name="val3x23" type="S" value="-1,0,&quot;javax.swing.JCheckBox&quot;"/>
+				<Prp name="val3x24" type="S" value="-1,0,&quot;javax.swing.JScrollPane&quot;"/>
+				<Prp name="val3x25" type="S" value="-1,0,&quot;SysLink&quot;,-1,0,&quot;Link?Window&quot;"/>
+				<Prp name="val3x26" type="S" value="-1,0,&quot;*ListView*&quot;"/>
+				<Prp name="val3x27" type="S" value="-1,0,&quot;*SysPager*&quot;,-1,0,&quot;*PageScroller*&quot;"/>
+				<Prp name="val3x28" type="S" value="-1,0,&quot;*SysHeader*&quot;,-1,0,&quot;THeaderControl*&quot;"/>
+				<Prp name="val3x29" type="S" value="-1,-1,&quot;javax.swing.JMenuBar&quot;"/>
+				<Prp name="val3x3" type="S" value="-1,0,&quot;javax.swing.JTree&quot;"/>
+				<Prp name="val3x30" type="S" value="-1,0,&quot;javax.swing.JTabbedPane&quot;"/>
+				<Prp name="val3x31" type="S" value="-1,0,&quot;javax.swing.JPasswordField&quot;"/>
+				<Prp name="val3x32" type="S" value=""/>
+				<Prp name="val3x33" type="S" value="-1,0,&quot;*CHECKBOX*&quot;"/>
+				<Prp name="val3x34" type="S" value=""/>
+				<Prp name="val3x35" type="S" value="-1,0,&quot;ListBox&quot;,-1,0,&quot;TListBox*&quot;,-1,0,&quot;TCheckListBox*&quot;,-1,0,&quot;TColorListBox*&quot;,-1,0,&quot;ThunderRT6ListBox&quot;,-1,0,&quot;WFC.LISTBOX&quot;,-1,0,&quot;WindowsForms*.LISTBOX.*&quot;,-1,0,&quot;ComboLBox&quot;,-1,0,&quot;REListBox20W&quot;"/>
+				<Prp name="val3x36" type="S" value="-1,0,&quot;*ScrollBar*&quot;"/>
+				<Prp name="val3x37" type="S" value="-1,0,&quot;javax.swing.JSpinner&quot;"/>
+				<Prp name="val3x38" type="S" value="-1,0,&quot;*TreeView*&quot;"/>
+				<Prp name="val3x39" type="S" value="-1,0,&quot;TStringGrid&quot;"/>
+				<Prp name="val3x4" type="S" value="-1,0,&quot;javax.swing.JComboBox&quot;"/>
+				<Prp name="val3x40" type="S" value="-1,0,&quot;*UpDown*&quot;"/>
+				<Prp name="val3x41" type="S" value="-1,0,&quot;javax.swing.JButton&quot;"/>
+				<Prp name="val3x42" type="S" value="-1,0,&quot;javax.swing.JToolBar&quot;"/>
+				<Prp name="val3x43" type="S" value="-1,0,&quot;*HotKey*&quot;"/>
+				<Prp name="val3x44" type="S" value="-1,0,&quot;javax.swing.JToggleButton&quot;"/>
+				<Prp name="val3x45" type="S" value="-1,0,&quot;*TabControl*&quot;,-1,0,&quot;TPageControl&quot;,-1,0,&quot;TTabbedNotebook&quot;,-1,0,&quot;TPropertySheetControl&quot;,-1,0,&quot;TabStrip20WndClass&quot;,-1,0,&quot;_wx_SysTabCtl32&quot;"/>
+				<Prp name="val3x46" type="S" value="-1,0,&quot;SysIPAddress32&quot;"/>
+				<Prp name="val3x47" type="S" value="-1,0,&quot;*RadioButton*&quot;,-1,0,&quot;TGroupButton*&quot;,-1,0,&quot;Thunder*OptionButton&quot;"/>
+				<Prp name="val3x48" type="S" value="-1,0,&quot;javax.swing.table.JTableHeader&quot;"/>
+				<Prp name="val3x49" type="S" value="-1,0,&quot;*ToolBar*&quot;"/>
+				<Prp name="val3x5" type="S" value=""/>
+				<Prp name="val3x50" type="S" value="-1,0,&quot;javax.swing.JCheckBoxMenuItem&quot;"/>
+				<Prp name="val3x6" type="S" value="-1,0,&quot;TDBGrid&quot;"/>
+				<Prp name="val3x7" type="S" value="-1,0,&quot;javax.swing.JMenu&quot;"/>
+				<Prp name="val3x8" type="S" value="-1,0,&quot;javax.swing.JTable&quot;"/>
+				<Prp name="val3x9" type="S" value="-1,0,&quot;javax.swing.JRadioButton&quot;"/>
 				<Prp name="val4x0" type="S" value=""/>
-				<Prp name="val4x1" type="S" value="{58572EB1-5FBF-11D5-A0B1-0050DA82B17A}"/>
-				<Prp name="val4x10" type="S" value="{2EB3EB61-57B8-11D4-8F40-005004347D8A}"/>
-				<Prp name="val4x11" type="S" value="{B8A32261-5D3E-11D4-8F45-005004347D8A}"/>
-				<Prp name="val4x12" type="S" value="{82A06E44-FA22-474C-8913-A5C63854D9F4}"/>
-				<Prp name="val4x13" type="S" value="{23375892-4DD6-11D5-A0A0-0050DA82B17A}"/>
-				<Prp name="val4x14" type="S" value="{2E138281-4EAB-11D5-A0A2-0050DA82B17A}"/>
-				<Prp name="val4x15" type="S" value="{CC40A511-13AD-11D6-A1B1-0050DA82B17A}"/>
-				<Prp name="val4x16" type="S" value="{9E687D31-4F7F-11D5-A0A4-0050DA82B17A}"/>
-				<Prp name="val4x17" type="S" value="{5335DB5E-B351-46BD-B6F5-EDC1E53D9F65}"/>
-				<Prp name="val4x18" type="S" value="{574A6D81-63E7-11D5-A0B8-0050DA82B17A}"/>
-				<Prp name="val4x19" type="S" value="{4ED1CDF0-2C75-11D4-8EF9-005004347D8A}"/>
-				<Prp name="val4x2" type="S" value="{14AAE3C1-2C95-11D4-8EF9-005004347D8A}"/>
-				<Prp name="val4x20" type="S" value="{D0602DF6-C17C-4C80-A4E5-8AD141AABEDC}"/>
-				<Prp name="val4x21" type="S" value="{3080C640-C91C-11D4-998B-AB0FB1A63070}"/>
-				<Prp name="val4x22" type="S" value="{345FC421-561B-11D4-8F3B-005004347D8A}"/>
-				<Prp name="val4x23" type="S" value="{A5B47A61-32CC-11D4-8F05-005004347D8A}"/>
-				<Prp name="val4x24" type="S" value="{977F8F40-C8A7-11D4-998B-F35DA5070C70}"/>
-				<Prp name="val4x3" type="S" value="{716CF203-263D-11D4-8EF3-005004347D8A}"/>
-				<Prp name="val4x4" type="S" value="{006B78B2-3612-11D4-8F07-005004347D8A}"/>
-				<Prp name="val4x5" type="S" value="{3A50BFD1-649F-11D5-A0B9-0050DA82B17A}"/>
-				<Prp name="val4x6" type="S" value="{BE24E79E-E35C-4B75-834C-F462EE9396A1}"/>
-				<Prp name="val4x7" type="S" value="{06374633-0A16-47EA-BFE5-38CE84C02760}"/>
-				<Prp name="val4x8" type="S" value="{CCBEA5D1-4274-11D4-8F17-005004347D8A}"/>
-				<Prp name="val4x9" type="S" value="{9F70C780-C783-4339-95F3-503F2E726C90}"/>
+				<Prp name="val4x1" type="S" value="{CCBEA5D1-4274-11D4-8F17-005004347D8A}"/>
+				<Prp name="val4x10" type="S" value="{A5ACBD31-EFEE-4377-A289-510AD94E4B4E}"/>
+				<Prp name="val4x11" type="S" value="{3D30CB6B-934E-4787-8686-D2DC944F9C07}"/>
+				<Prp name="val4x12" type="S" value="{58572EB1-5FBF-11D5-A0B1-0050DA82B17A}"/>
+				<Prp name="val4x13" type="S" value="{716CF203-263D-11D4-8EF3-005004347D8A}"/>
+				<Prp name="val4x14" type="S" value="{3080C640-C91C-11D4-998B-AB0FB1A63070}"/>
+				<Prp name="val4x15" type="S" value="{8EB26B4A-C26F-46DE-897C-282740A9C2FE}"/>
+				<Prp name="val4x16" type="S" value="{CC40A511-13AD-11D6-A1B1-0050DA82B17A}"/>
+				<Prp name="val4x17" type="S" value="{9A5DD4B7-FE5C-4E55-A7C6-A66E8C1D942B}"/>
+				<Prp name="val4x18" type="S" value="{269EC47C-1911-47FC-83D4-8C43FE45B32E}"/>
+				<Prp name="val4x19" type="S" value="{D63DD295-BF60-4C19-BF07-579676F1146B}"/>
+				<Prp name="val4x2" type="S" value=""/>
+				<Prp name="val4x20" type="S" value="{82A06E44-FA22-474C-8913-A5C63854D9F4}"/>
+				<Prp name="val4x21" type="S" value="{4ED1CDF0-2C75-11D4-8EF9-005004347D8A}"/>
+				<Prp name="val4x22" type="S" value="{3A50BFD1-649F-11D5-A0B9-0050DA82B17A}"/>
+				<Prp name="val4x23" type="S" value="{B9215B74-2F96-4065-9FB3-9D1526EEBAD7}"/>
+				<Prp name="val4x24" type="S" value="{6EA27BFE-7A0E-4AB4-9DC6-6486E47EC32C}"/>
+				<Prp name="val4x25" type="S" value="{06374633-0A16-47EA-BFE5-38CE84C02760}"/>
+				<Prp name="val4x26" type="S" value="{006B78B2-3612-11D4-8F07-005004347D8A}"/>
+				<Prp name="val4x27" type="S" value="{574A6D81-63E7-11D5-A0B8-0050DA82B17A}"/>
+				<Prp name="val4x28" type="S" value="{9F70C780-C783-4339-95F3-503F2E726C90}"/>
+				<Prp name="val4x29" type="S" value="{D0D387BB-2DA3-4294-A55F-7DF642F1975D}"/>
+				<Prp name="val4x3" type="S" value="{FA98F18D-09D4-423E-94D0-F822397B369C}"/>
+				<Prp name="val4x30" type="S" value="{9C7A9C5B-96A7-46F8-8F71-7DB3262F22BB}"/>
+				<Prp name="val4x31" type="S" value="{2DE03994-1524-4838-88B6-07CF537142F5}"/>
+				<Prp name="val4x32" type="S" value="{D0602DF6-C17C-4C80-A4E5-8AD141AABEDC}"/>
+				<Prp name="val4x33" type="S" value="{345FC421-561B-11D4-8F3B-005004347D8A}"/>
+				<Prp name="val4x34" type="S" value="{977F8F40-C8A7-11D4-998B-F35DA5070C70}"/>
+				<Prp name="val4x35" type="S" value="{A5B47A61-32CC-11D4-8F05-005004347D8A}"/>
+				<Prp name="val4x36" type="S" value="{23375892-4DD6-11D5-A0A0-0050DA82B17A}"/>
+				<Prp name="val4x37" type="S" value="{49BA71C6-8A9E-4EEF-BC35-B2F618F79D67}"/>
+				<Prp name="val4x38" type="S" value="{14AAE3C1-2C95-11D4-8EF9-005004347D8A}"/>
+				<Prp name="val4x39" type="S" value="{5D10BA13-D5F4-44D5-A18B-E977D654418D}"/>
+				<Prp name="val4x4" type="S" value="{C5BDADF2-41F0-4398-B76A-995160721368}"/>
+				<Prp name="val4x40" type="S" value="{2E138281-4EAB-11D5-A0A2-0050DA82B17A}"/>
+				<Prp name="val4x41" type="S" value="{AA8311A8-D893-4F5F-88F3-5BA33E9B94AA}"/>
+				<Prp name="val4x42" type="S" value="{A978648F-2B98-42EA-9B88-313F326959A4}"/>
+				<Prp name="val4x43" type="S" value="{9E687D31-4F7F-11D5-A0A4-0050DA82B17A}"/>
+				<Prp name="val4x44" type="S" value="{526C06EE-D0F5-4038-A174-172D34A1FA7B}"/>
+				<Prp name="val4x45" type="S" value="{2EB3EB61-57B8-11D4-8F40-005004347D8A}"/>
+				<Prp name="val4x46" type="S" value="{5335DB5E-B351-46BD-B6F5-EDC1E53D9F65}"/>
+				<Prp name="val4x47" type="S" value="{BE24E79E-E35C-4B75-834C-F462EE9396A1}"/>
+				<Prp name="val4x48" type="S" value="{2C53FFA6-B4AC-464B-ABF3-1C363024ED27}"/>
+				<Prp name="val4x49" type="S" value="{B8A32261-5D3E-11D4-8F45-005004347D8A}"/>
+				<Prp name="val4x5" type="S" value=""/>
+				<Prp name="val4x50" type="S" value="{21399519-3421-4366-82A0-8B707D81F4CA}"/>
+				<Prp name="val4x6" type="S" value="{4DF62D40-DBF1-4485-9889-B820A9AEFE6C}"/>
+				<Prp name="val4x7" type="S" value="{EBABD24B-370C-469D-ABEB-75AFA4C9C1AE}"/>
+				<Prp name="val4x8" type="S" value="{5FC86967-5765-46CC-9EC7-0CD1819D15E0}"/>
+				<Prp name="val4x9" type="S" value="{8EB0BD9E-D470-4078-823D-94CC2E1CC78B}"/>
 			</Node>
 			<Node name="{7e9d3e8b-dff5-4737-a877-e94b6b932bcd}">
 				<Prp name="type" type="I" value="1"/>

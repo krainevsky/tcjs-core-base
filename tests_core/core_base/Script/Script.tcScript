@@ -119,6 +119,51 @@
 				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
 				<Prp name="typename" type="S" value="Script Unit"/>
 			</Node>
+			<Node name="item0000000011">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\apps\core_apps_app.js"/>
+				</Node>
+				<Prp name="index" type="I" value="11"/>
+				<Prp name="key" type="S" value="{8A5732ED-63B8-411F-9EDC-4DB3E85FC910}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000012">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\apps\core_apps_cmd.js"/>
+				</Node>
+				<Prp name="index" type="I" value="12"/>
+				<Prp name="key" type="S" value="{CACD6279-8DEC-49C9-99EE-5579095FF152}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000013">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\apps\core_apps_complex_app.js"/>
+				</Node>
+				<Prp name="index" type="I" value="13"/>
+				<Prp name="key" type="S" value="{A4DE6D07-E931-48C7-B075-70BE0D5F0A34}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000014">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\base\core_base_variables.js"/>
+				</Node>
+				<Prp name="index" type="I" value="14"/>
+				<Prp name="key" type="S" value="{93B3F015-7091-40D1-9E64-267377A9DBFE}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000015">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="..\..\..\core\player\core_player_finder.js"/>
+				</Node>
+				<Prp name="index" type="I" value="15"/>
+				<Prp name="key" type="S" value="{E597E4F5-BB3E-44EA-969B-341441D035A9}"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
 		</Node>
 		<Node name="folders">
 			<Node name="folders">
@@ -159,6 +204,10 @@
 									<Prp name="index" type="I" value="7"/>
 									<Prp name="key" type="S" value="{F5834689-4FB0-4C4D-924B-773947A5288D}"/>
 								</Node>
+								<Node name="ref0000000008">
+									<Prp name="index" type="I" value="8"/>
+									<Prp name="key" type="S" value="{93B3F015-7091-40D1-9E64-267377A9DBFE}"/>
+								</Node>
 							</Node>
 							<Prp name="caption" type="S" value="base"/>
 							<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
@@ -176,10 +225,35 @@
 									<Prp name="index" type="I" value="1"/>
 									<Prp name="key" type="S" value="{FFF2AE71-61C4-4BB8-815F-D362B20F08DF}"/>
 								</Node>
+								<Node name="ref0000000002">
+									<Prp name="index" type="I" value="2"/>
+									<Prp name="key" type="S" value="{E597E4F5-BB3E-44EA-969B-341441D035A9}"/>
+								</Node>
 							</Node>
 							<Prp name="caption" type="S" value="player"/>
 							<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
 							<Prp name="index" type="I" value="1"/>
+							<Prp name="moniker" type="S" value=""/>
+						</Node>
+						<Node name="folder0000000002">
+							<Node name="folders"/>
+							<Node name="references">
+								<Node name="ref0000000000">
+									<Prp name="index" type="I" value="0"/>
+									<Prp name="key" type="S" value="{8A5732ED-63B8-411F-9EDC-4DB3E85FC910}"/>
+								</Node>
+								<Node name="ref0000000001">
+									<Prp name="index" type="I" value="1"/>
+									<Prp name="key" type="S" value="{CACD6279-8DEC-49C9-99EE-5579095FF152}"/>
+								</Node>
+								<Node name="ref0000000002">
+									<Prp name="index" type="I" value="2"/>
+									<Prp name="key" type="S" value="{A4DE6D07-E931-48C7-B075-70BE0D5F0A34}"/>
+								</Node>
+							</Node>
+							<Prp name="caption" type="S" value="apps"/>
+							<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+							<Prp name="index" type="I" value="2"/>
 							<Prp name="moniker" type="S" value=""/>
 						</Node>
 					</Node>
